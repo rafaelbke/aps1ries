@@ -25,10 +25,10 @@ public class Produtor extends Thread{
     @Override
     public void run(){
         
-        int num = -1;
+        String num ;
         do{
             
-         String num1 =JOptionPane.showInputDialog("Qual o do Contato que deseja buscar? ");
+         num =JOptionPane.showInputDialog("Qual o do Contato que deseja buscar? ");
 
             //num = new Random().nextInt(10000);
             buffer.produzir(num);
@@ -39,7 +39,7 @@ public class Produtor extends Thread{
 //            } catch (InterruptedException ex) {
 //                Logger.getLogger(Produtor.class.getName()).log(Level.SEVERE, null, ex);
 //            }
-        }while(num!=0);
+        }while(num!=null);
     }
     
 }

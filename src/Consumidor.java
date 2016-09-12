@@ -35,7 +35,7 @@ public class Consumidor extends Thread{
 //            }
             
         //}while(valorConsumido!=0);
-        }while(valorConsumido != true);
+        }while(valorConsumido != null );
                 
                 
         
